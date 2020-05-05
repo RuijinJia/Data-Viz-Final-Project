@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visualization</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <div id='container'>
+        <div id='header'>
+            <div id="headertext">
+                <h1>Global Air Quality, Causes and Health Impact</h1>
+                <h2>An Analysis of Air Quality on Health Impact</h2>
+            </div>
+            <div id='navigation'>
+                <ul id='navi'>
+                    <li><a href="main.html">Overview</a></li>
+                    <li class='selected'><a href="outdoor.html"><b>Ambient Pollution</b></a></li>
+                    <li><a href="indoor.html">Indoor Pollution</a></li>
+                    <li><a href="energy.html">Sources</a></li>
+                    <li><a href="trend.html">Solutions</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div id='content'>   
+            <div class='author'>
+                <h3>Author</h3>
+                <h4>Ruijin Jia</h4>
+                <h5><a href="mailto:rjia58@gwu.edu">rjia58@gwu.edu</a></h5>
+                <h5>Instructor: Nima Zahadat</h5>
+                <h3>Data Source</h3>
+                <ul>
+                    <li><a class="selected" href="https://data.worldbank.org/">World Bank Open Data</a></li>
+                    <li><a class="selected" href="https://www.who.int/">WHO</a></li>
+                    <li><a class="selected" href="https://www.data.gov/">Data Gov</a></li>
+                    <li><a class="selected" href="https://dataverse.harvard.edu/dataverse/cga_aqi">Harvard Dataverse</a></li>
+                </ul>
+            </div>
+            <div id='chart'>
+                <h1>
+                    <p>According to 2005 WHO air quality guidline, evaluation on outdoor air pollution includes: Particulate Matter(PM), Ozone(O3), Nitrogen Oxide(NO2), and Sulfur Dioxide.</p>
+                </h1>
+                <h2>Share of the population exposed to air pollution levels above WHO guidelines</h2>
+                <div class='tableauPlaceholder' id='viz1588306864473' style='position: relative'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3K&#47;3KJD5P3SY&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' />
+                        <param name='path' value='shared&#47;3KJD5P3SY' /> <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;3K&#47;3KJD5P3SY&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' /><param name='filter' value='publish=yes' />
+                    </object>
+                </div> 
+                <p>The share of the population exposed to outdoor concentrations of particulate matter (PM2.5) that exceed the WHO guideline
+                    value of 10 micrograms per cubic meter. </p>  
+                <h1>Particulate matter (PM)
+                    <p>
+                        Particles with a diameter of 2.5 microns or less(≤ PM2.5) can be especially health-damaging. Fine particulate matter (PM2.5) guideline values are 10 μg/m3 annual mean
+                        and 25 μg/m3 24-hour mean.
+                    </p>   
+                </h1>
+                <h2>Global PM2.5</h2>
+                <div class='tableauPlaceholder' id='viz1588307499269' style='position: relative'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;MQ&#47;MQGM84SM7&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> 
+                        <param name='path' value='shared&#47;MQGM84SM7' /> <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;MQ&#47;MQGM84SM7&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' /><param name='filter' value='publish=yes' />
+                    </object>
+                </div>                                                               
+                <p></p>
+                
+                 
+                <h1>Sulfur dioxide (SO2) Emissions by Region</h1>            
+                    <div class="flourish-embed flourish-scatter" data-src="visualisation/2187404" data-url="https://flo.uri.sh/visualisation/2187404/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                <h1>Ozone (O3)</h1>
+                <div id="ozone_trend_div" style="width: 750px; height: 450px;"></div>
+                
+                <h1>Nitrogen oxides (NO2) Emissions</h1>
+                <div id="NO_trend_div" style="width: 750px; height: 450px;"></div>
+                
+                
+            </div>
+        <div class="footer">
+            Copyright &copy 2020
+        </div>
+        </div>
+    </div>
+
+    <script type='text/javascript'>                    var divElement = document.getElementById('viz1588307499269');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<script type='text/javascript'>                    var divElement = document.getElementById('viz1588306864473');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+<script type="text/javascript">
+
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawAllSheets);
+    
+    function drawAllSheets() {
+        drawSheetName('Ozone', 'SELECT B,C,D,E', OzoneTrendResponseHandler);
+        drawSheetName('NO2', 'SELECT C,D,E', NOTrendResponseHandler);
+    }
+    function drawSheetName(sheetName, query, responseHandler) {
+        var queryString = encodeURIComponent(query);
+        var query = new google.visualization.Query(
+        'https://docs.google.com/spreadsheets/d/18fpYImxD39zLaAcKrc788-AQndnNij17-nr0X7ditUw//gviz/tq?sheet=' + sheetName + '&headers=1&tq=' +queryString  
+        );   
+        query.send(responseHandler);
+    }
+    function OzoneTrendResponseHandler(response) {
+
+        var data = response.getDataTable();
+        var options = {
+
+        title: 'Ozone Emission/Production',	
+        chartArea:{left:200,width:'100%',right:200},
+        legend: { position: 'right' }};
+
+        var chart = new google.visualization.LineChart(document.getElementById('ozone_trend_div'));
+        chart.draw(data, options);
+    }
+    function NOTrendResponseHandler(response) {
+
+var data = response.getDataTable();
+var options = {
+
+title: 'Nitrogen oxides(US vs UK)',	
+chartArea:{left:200,width:'100%',right:200},
+legend: { position: 'right' }};
+
+var chart = new google.visualization.LineChart(document.getElementById('NO_trend_div'));
+chart.draw(data, options);
+}
+</script>
+</body>
+</html>

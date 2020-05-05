@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visualization</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+    <div id='container'>
+        <div id='header'>
+            <div id="headertext">
+                <h1>Global Air Quality, Causes and Health Impact</h1>
+                <h2>An Analysis of Air Quality on Health Impact</h2>
+            </div>
+            <div id='navigation'>
+                <ul id='navi'>
+                    <li><a href="main.html">Overview</a></li>
+                    <li ><a href="outdoor.html">Ambient Pollution</a></li>
+                    <li><a href="indoor.html">Indoor Pollution</a></li>
+                    <li><a href="energy.html">Sources</a></li>
+                    <li class='selected'><a href="trend.html"><b>Solutions</b></a></li>
+                </ul>
+            </div>
+        </div> 
+        <div id='content'>   
+            <div class='author'>
+                <h3>Author</h3>
+                <h4>Ruijin Jia</h4>
+                <h5><a href="mailto:rjia58@gwu.edu">rjia58@gwu.edu</a></h5>
+                <h5>Instructor: Nima Zahadat</h5>
+                <h3>Data Source</h3>
+                <ul>
+                    <li><a class="selected" href="https://data.worldbank.org/">World Bank Open Data</a></li>
+                    <li><a class="selected" href="https://www.who.int/">WHO</a></li>
+                    <li><a class="selected" href="https://www.data.gov/">Data Gov</a></li>
+                    <li><a class="selected" href="https://dataverse.harvard.edu/dataverse/cga_aqi">Harvard Dataverse</a></li>
+                </ul>
+            </div>
+            <div id='chart'>
+                <h1>Ways to solve air pollution crisis
+                    <p>
+                        Air pollution would damage every organ of our body and causes climate damage. Main cause of air pollution is burning fossil fuels. Many clean energy alternatives
+                         like natural gas, hydrogen, solar, wind, biofuels have been around for generation. Clean energy revolution happens across world, but more action is needed to unlock climate solutions. 
+                    </p>
+                    <img src="image/pic1.png" height=400px, width=650px>  
+                </h1>
+                <p></p>
+                <h2>Renewable Energy vs GDP per Capita</h2>
+                <div class='tableauPlaceholder' id='viz1588400411844' style='position: relative'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;Renewable_15884003044040&#47;RenewableEnergy-GDPperCapita&#47;1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' /><param name='name' value='Renewable_15884003044040&#47;RenewableEnergy-GDPperCapita' /><param name='tabs' value='no' />
+                        <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Re&#47;Renewable_15884003044040&#47;RenewableEnergy-GDPperCapita&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+
+                        <param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>   
+                <p></p>             
+                <h2>Renewable Energy Investment</h2>
+                <div class="flourish-embed flourish-chart" data-src="visualisation/2202194" data-url="https://flo.uri.sh/visualisation/2202194/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>                                                            
+                <p></p>
+                <h2>Renewable Energy Invesment per GDP</h2>
+                <div id="Renew_div" style="width: 750px; height: 450px;"></div>
+                <h2>Global Renewable Energy Consumption</h2>
+                <div class="flourish-embed flourish-chart" data-src="visualisation/2202769" data-url="https://flo.uri.sh/visualisation/2202769/embed"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+                <p></p>
+                 
+                <h2>Percentage of Access to Clean Fuels and Technologies for Cooking vs GDP per Capita</h2>            
+                <div class='tableauPlaceholder' id='viz1588406750104' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book8_15884067269320&#47;PercentageofAccesstoCleanFuelsandTechnologiesforCookingvsGDPperCapita&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Book8_15884067269320&#47;PercentageofAccesstoCleanFuelsandTechnologiesforCookingvsGDPperCapita' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bo&#47;Book8_15884067269320&#47;PercentageofAccesstoCleanFuelsandTechnologiesforCookingvsGDPperCapita&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1588406750104');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                
+                
+            </div>
+        <div class="footer">
+            Copyright &copy 2020
+        </div>
+        </div>
+    </div>
+
+    <script type='text/javascript'>                    var divElement = document.getElementById('viz1588400411844');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+
+<script type="text/javascript">
+
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawAllSheets);
+    
+    function drawAllSheets() {
+        drawSheetName('Renew', 'SELECT A,D', RenewResponseHandler);
+        
+    }
+    function drawSheetName(sheetName, query, responseHandler) {
+        var queryString = encodeURIComponent(query);
+        var query = new google.visualization.Query(
+        'https://docs.google.com/spreadsheets/d/18fpYImxD39zLaAcKrc788-AQndnNij17-nr0X7ditUw//gviz/tq?sheet=' + sheetName + '&headers=1&tq=' +queryString  
+        );   
+        query.send(responseHandler);
+    }
+    function RenewResponseHandler(response) {
+        var data = response.getDataTable();
+
+        var options ={
+            height: 400,
+            legend: 'none',
+            bars: 'horizontal',
+            annotations: {alwaysOutside: false},
+            
+            vAxis: {title: 'Country'},
+            hAxis: {title: 'Renewable Energy Investment per Capita'}
+        };
+
+        var view = new google.visualization.DataView(data);
+        view.setColumns([0,1,{
+                calc: function(dt, row){
+                    return ''+ dt.getFormattedValue(row, 1);
+                },
+                sourceColumn: 1,
+                type: 'string',
+                role: 'annotation'
+        }]);
+
+        var chart = new google.visualization.BarChart(
+                    document.getElementById("Renew_div")
+        );
+        chart.draw(view, options); 
+    }
+</script>
+</body>
+</html>

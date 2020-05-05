@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visualization</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id='container'>
+        <div id='header'>
+            <div id="headertext">
+                <h1>Global Air Quality, Causes and Health Impact</h1>
+                <h2>An Analysis of Air Quality on Health Impact</h2>
+            </div>
+            <div id='navigation'>
+                <ul id='navi'>
+                    <li class='selected'><a href="main.html"><b>Overview</b></a></li>
+                    <li><a href="outdoor.html">Ambient pollution</a></li>
+                    <li><a href="indoor.html">Indoor Pollution</a></li>
+                    <li><a href="energy.html">Sources</a></li>
+                    <li><a href="trend.html">Solutions</a></li>
+                </ul>
+            </div>
+        </div> 
+        <div id='content'>   
+            <div class='author'>
+                <h3>Author</h3>
+                <h4>Ruijin Jia</h4>
+                <h5><a href="mailto:rjia58@gwu.edu">rjia58@gwu.edu</a></h5>
+                <h5>Instructor: Nima Zahadat</h5>
+                <h3>Data Source</h3>
+                <ul>
+                    <li><a class="selected" href="https://data.worldbank.org/">World Bank Open Data</a></li>
+                    <li><a class="selected" href="https://www.who.int/">WHO</a></li>
+                    <li><a class="selected" href="https://www.data.gov/">Data Gov</a></li>
+                    <li><a class="selected" href="https://dataverse.harvard.edu/dataverse/cga_aqi">Harvard Dataverse</a></li>
+                </ul>
+            </div>
+            <div id='chart'>
+                <h1>About the Data & Project
+                    <p>
+                        Air pollution is the leading public health issue and is one of the main causes of death across the world. Pollution-related diseases include stroke, heart disease, lung cancer, and other respiratory illness. According to <a href="https://www.who.int/">World Health Organization</a>’s research, 9 out of 10 people breathe air containing high levels of pollutants.
+                        The project is going to look at the details of the aggregate picture of air pollution, explore the causes, the health impact, and future pathways of solutions.
+                    </p>  
+                    <img src="image/1582346138872.jpeg" width=650px > 
+                </h1>
+                <h1>Series Impact on Public Health
+                    <p></p>
+                    <h2>Deaths by Risk Factors</h2>
+                    <div class='tableauPlaceholder' id='viz1588277404073' style='position: relative'>
+                        <noscript>
+                            <a href='#'>
+                                <img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DeathbyRiskFactor&#47;DeathbyRiskFactors&#47;1_rss.png' style='border: none' />
+                            </a>
+                        </noscript>
+                        <object class='tableauViz'  style='display:none;'>
+                            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' />
+                            <param name='name' value='DeathbyRiskFactor&#47;DeathbyRiskFactors' /><param name='tabs' value='no' />
+                            <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;De&#47;DeathbyRiskFactor&#47;DeathbyRiskFactors&#47;1.png' /> 
+                            <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+                            <param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+                            <param name='display_count' value='yes' /><param name='filter' value='publish=yes' />
+                        </object>
+                    </div>
+                    <p></p>
+                    <h2>
+                        Life Expectancy vs PM2.5
+                    </h2> 
+                    
+                        <div class="flourish-embed flourish-scatter" data-src="visualisation/2183007" data-url="https://flo.uri.sh/visualisation/2183007/embed">
+                            <script src="https://public.flourish.studio/resources/embed.js">
+                            </script>
+                        </div>
+                                  
+ 
+                </h1>
+
+
+            </div>
+        <div class="footer">
+            Copyright &copy 2020
+        </div>
+        </div>
+    </div>
+
+
+    <script type='text/javascript'>                    
+        var divElement = document.getElementById('viz1588277404073');                    
+        var vizElement = divElement.getElementsByTagName('object')[0];                    
+        vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+        var scriptElement = document.createElement('script');                    
+        scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+        </script>    
+
+</body>
+</html>
